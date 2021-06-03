@@ -117,6 +117,7 @@ hr {
 /* the three drawings */
 .draw1 {
   width: 100%;
+  visibility: hidden;
 }
 
 .row {
