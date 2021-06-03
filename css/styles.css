@@ -116,7 +116,6 @@ hr {
 
 /* the three drawings */
 .draw1 {
-  visibility: hidden;
   width: 100%;
 }
 
@@ -128,6 +127,17 @@ hr {
   flex: 33.33%;
   padding: 5px;
 }
+
+.fadeIn {
+        -webkit-animation: animat_show 0.8s;
+        animation: animat_show 0.8s;
+        visibility: visible !important;
+    }
+
+    @-webkit-keyframes animat_show{
+        0%{opacity:0}
+        100%{opacity:1}
+    }
 
 /* cloud */
 .top-cloud {
