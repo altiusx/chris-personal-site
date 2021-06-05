@@ -4,11 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>Christopher Choong - Welcome</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/f604964c0d.js" crossorigin="anonymous"></script>
+
   <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Raleway:wght@300;400;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <script>
@@ -37,70 +45,190 @@
 
 <body>
 
-  <div class="top-container">
+  <!-- Cloud area -->
+  <div id="title" class="top-container">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href=""><img src="images/hk-sticker.jpeg" class="img-thumbnail profile-picture" alt="test-profile-picture"></a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
     <h1>I'm Christopher.</h1>
-    <h2>a <span class="pro">pro</span>grammer.</h2>
+    <h2 class="title-trailing">a software developer.</h2>
     <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
     <img src="images/mountain.png" alt="mountain-img">
+  </div>
 
+  <!-- Content -->
+
+
+
+  <!-- Profile -->
+  <div id="profile" class="profile">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="images/profile-pic.jpg" class="img-thumbnail profile-picture" alt="test-profile-picture">
+        </div>
+        <div class="col-lg-6 align-items-left">
+          <h2 class="profile-header">Hello.</h2>
+          <p class="intro">I am a recent graduate from NTU Electrical & Electronic Engineering. I specialise in info-communications, with a focus on computer engineering. Addicted to coffee, lofi and metroidvanias.</p>
+          <br>
+          <p class="intro">Here's Valley by Leavv, one of my favourite lofi tracks:</p>
+          <audio src="music/valley.mp3" controls>
+            <p>If you are reading this, it is because your browser does not support the audio element.</p>
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills and projects -->
+
+
+  <div id="projects" class="projects">
+    <h2>My Projects.</h2>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-row">
+            <img class="skills-pic-1" src="images/IMG_0298.jpeg" alt="smartmove-app-icon">
+            <h3><a class="skills-links" href="https://github.com/altiusx/smartmove">Smartmove</a></h3>
+            <p>Smartmove is an elderly-friendly Flutter application that combines a task manager along with functionality which allows users to check bus arrival timings. Users can easily add a task along with its location and corresponding date and
+              time to be
+              notified. Bus service timings are provided by the Land Transport Authority.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="skill-row">
+            <img class="skills-pic-1" src="images/hecha.png" alt="hecha-icon">
+            <h3><a class="skills-links" href="https://github.com/altiusx/ee4717-hecha4000-final">Hecha 4000</a></h3>
+            <p>Hecha 4000 is a makeshift bubble tea store which allows customers to order personalised teas out of three available tea options. This project includes hand-drawn assets, PHP, SQL, CSS and JavaScript
+              code to account for user as well as administrator access, where users make orders and administrators set prices and stock levels.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="skill-row">
+            <img class="skills-pic-1" src="images/tincorgs.jpg" alt="hecha-icon">
+            <h3><a class="skills-links" href="https://altiusx.github.io/tincorgs/">TinCorgs</a></h3>
+            <p>TinCorgs is a comedic web project that is based on Dr Angela Yu's web development bootcamp. It is a service made for corgi lovers, who would like to be matched with a corgi. This project is done with HTML and CSS, with emphasis on
+              utilising the Bootstrap framework.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="images/hk-sticker.jpeg" class="profile-picture" alt="test-profile-picture">
-      <h2>Hello.</h2>
-      <p class="intro">I am a recent graduate from NTU Electrical & Electronic Engineering. I specialise in info-communications, with a focus on computer engineering. Addicted to coffee, lofi and metroidvanias.</p>
-      <br>
-      <p class="intro">Here's Valley by Leavv, one of my favourite lofi tracks:</p>
-      <audio src="music/valley.mp3" controls>
-        <p>If you are reading this, it is because your browser does not support the audio element.</p>
-      </audio>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="skills-pic-1" src="https://media1.giphy.com/media/H83F4AfL798AmtKXIL/200w.webp?cid=ecf05e47s0hi8ey7q1qlhqhva4pdhp6hn25awyv46bmbx8gk&rid=200w.webp&ct=s" alt="dev-icon">
-        <h3>Application Development</h3>
-        <p>I have some experience with Xcode and Swift. For my final year project, I have developed a Flutter application named SmartMove - a task manager that is designed for the elderly, which incorporates Firebase, Hive and a senior-friendly user interface. In addition, I have some experience with web application design and
-          development.</p>
-      </div>
-      <div class="skill-row">
-        <img class="skills-pic-2" src="https://media2.giphy.com/media/DmDruKpuMZOhO0FBeH/200w.webp?cid=ecf05e47bpyxjdoul8k43ugyae6w132co2bjwb4hga3odrum&rid=200w.webp&ct=s" alt="drawing-icon">
-        <h3>Drawing</h3>
-        <p>I enjoy drawing with my iPad during my free time. Most of my drawings involve fictional characters from video games that I enjoy. You may check out the rest of my drawings on my Instagram linked below.</p>
 
-        <div class="row">
-          <div class="column">
-            <img class="draw1" src="images/IMG_0009.jpeg" alt="image1">
+
+  <!-- Hobbies -->
+
+  <div id="hobbies" class="hobbies">
+    <h2>Other stuff that I do.</h2>
+    <div class="container-fluid">
+      <div class="row">
+
+        <!-- <div id="art-carousel" class="carousel slide" data-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active container-fluid">
+              <img class="draw0 img-fluid" src="images/IMG_0009.jpeg" alt="image1">
+              <em>Pikachu</em>
+            </div>
+            <div class="carousel-item container-fluid">
+              <img class="draw0 img-fluid" src="images/IMG_0038.jpeg" alt="image2">
+              <em>Ori & Ku</em>
+            </div>
+            <div class="carousel-item container-fluid">
+              <img class="draw0 img-fluid" src="images/IMG_0505.jpeg" alt="image3">
+              <em>Hollow Knight</em>
+            </div>
           </div>
-          <div class="column">
-            <img class="draw1" src="images/IMG_0038.jpeg" alt="image2">
+          <a class="carousel-control-prev" href="#art-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#art-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div> -->
+
+        <div class="skill-row">
+          <img class="skills-pic-2" src="https://media2.giphy.com/media/DmDruKpuMZOhO0FBeH/200w.webp?cid=ecf05e47bpyxjdoul8k43ugyae6w132co2bjwb4hga3odrum&rid=200w.webp&ct=s" alt="drawing-icon">
+          <h3>Drawing</h3>
+          <p>I enjoy drawing with my iPad during my free time. Most of my drawings involve fictional characters from video games that I enjoy. You may check out the rest of my drawings on my Instagram linked below.</p>
+
+          <div class="row">
+            <div class="column">
+              <a class="img-tags" href="https://www.instagram.com/p/CPPBa8ihwhL/"><img class="draw1 img-fluid" src="images/IMG_0009.jpeg" alt="image1"></a>
+            </div>
+            <div class="column">
+              <a class="img-tags" href="https://www.instagram.com/p/CPhqYS_hi9h/"><img class="draw1 img-fluid" src="images/IMG_0038.jpeg" alt="image2"></a>
+            </div>
+            <div class="column">
+              <a class="img-tags" href="https://www.instagram.com/p/CPv2kE6hPma/"><img class="draw1 img-fluid" src="images/IMG_0505.jpeg" alt="image3"></a>
+            </div>
           </div>
-          <div class="column">
-            <img class="draw1" src="images/IMG_0505.jpeg" alt="image3">
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="skill-row">
+            <img class="skills-pic-1" src="https://image.flaticon.com/icons/png/512/1772/1772102.png" alt="volunteer-icon">
+            <h3>Volunteerism</a></h3>
+            <p>I strongly believe in contributing to society and helping the less fortunate with my skills and abilities. I have been an active member of NTU's Welfare Services Club throughout my school years. My role involved mentoring students from
+              ITE College West subjects related to electronics and mathematics. In addition, I have participated in various events that aim to raise awareness of Autism.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="skill-row">
+            <img class="skills-pic-1" src="https://image.flaticon.com/icons/png/512/857/857433.png" alt="idea-icon">
+            <h3><a class="skills-links" href="https://altiusx.github.io/tincorgs/">Getting Inspired!</a></h3>
+            <p>I am always eager to learn new things, explore unfamiliar routes and getting my hands dirty. I will not miss any opportunity to acquire new knowledge, adapt to modern frameworks and hone my skillsets. I believe that my enthusiasm and
+              passion for technology as well as programming drives me to do my best for any task that I perform.</p>
           </div>
         </div>
 
       </div>
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you think we can discuss things further.</h3>
-      <p class="contact-message">It's great that we have synergy. If you would like to reach out to me, click the button below!</p>
-      <a class="btn" href="mailto:qchoong002@e.ntu.edu.sg">CONTACT ME</a>
+  </div>
+
+  <!-- Contact Me -->
+
+  <div id="contact" class="contact-me">
+    <h2>Get In Touch</h2>
+    <h3>If you think we can discuss things further.</h3>
+    <p class="contact-message">It's great that we have synergy. If you would like to reach out to me, click the button below!</p>
+    <button type="button" class="dwld-button btn btn-lg btn-outline-dark"><i class="fas fa-envelope"></i> <a class="email-tags" href="mailto:qchoong002@e.ntu.edu.sg"> </a>Contact Me</button>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid">
+      <a href="https://www.linkedin.com/in/christopher-qing-yi-choong-739709203/"> <i class="social-icon fab fa-linkedin fa-2x"></i></a>
+      <a href="https://www.instagram.com/altair_xcvi/"><i class="social-icon fab fa-instagram fa-2x"></i> </a>
+      <a href="https://github.com/altiusx"><i class="social-icon fab fa-github fa-2x"></i></a>
+      <a href="mailto:qchoong002@e.ntu.edu.sg"><i class="social-icon fas fa-envelope fa-2x"></i></a>
+      <p class="copyright">© 2021 Christopher Choong Qing Yi</p>
+      <div class="ack">Icons made by <a class="ack" href="https://www.freepik.com">Freepik</a> and <a class="ack">Pause08</a> from <a class="ack" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
-  </div>
-
-
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/christopher-qing-yi-choong-739709203/">LinkedIn</a>
-    <a class="footer-link" href="https://www.instagram.com/altair_xcvi/">Instagram</a>
-    <a class="footer-link" href="https://github.com/altiusx">GitHub</a>
-    <p class="copyright">© 2021 Christopher Choong Qing Yi.</p>
-  </div>
+  </footer>
 
 
 </body>
