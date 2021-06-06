@@ -49,9 +49,7 @@ p {
 }
 
 /***************** CLASSES *********************/
-
 /* cloud area */
-
 #title .profile-picture {
   width: 100px;
   height: 100px;
@@ -76,8 +74,13 @@ p {
 }
 
 @keyframes top-cloud {
-  from {right: 15%;}
-  to {right: 8%;}
+  from {
+    right: 15%;
+  }
+
+  to {
+    right: 8%;
+  }
 }
 
 .bottom-cloud {
@@ -88,12 +91,16 @@ p {
 }
 
 @keyframes bottom-cloud {
-  from {left: 20%;}
-  to {left: 10%;}
+  from {
+    left: 20%;
+  }
+
+  to {
+    left: 10%;
+  }
 }
 
 /* Hello section */
-
 .profile {
   background-color: #393e46;
   padding-top: 5%;
@@ -101,9 +108,9 @@ p {
 }
 
 .intro {
-    color: #eaf6f6;
-    text-align: left;
-    width: 90%;
+  color: #eaf6f6;
+  text-align: left;
+  width: 90%;
   /* margin: auto; */
 }
 
@@ -117,7 +124,6 @@ p {
 }
 
 /* Skills/Projects */
-
 .projects, .contact-me {
   background-color: #eeeeee;
   padding-top: 5%;
@@ -142,7 +148,6 @@ p {
 }
 
 /* Hobbies */
-
 .hobbies {
   background-color: #222831;
   color: #eaf6f6;
@@ -156,7 +161,6 @@ p {
 }
 
 /* the three drawings */
-
 .draw1 {
   visibility: hidden;
 }
@@ -187,7 +191,6 @@ p {
 }
 
 /*get in touch*/
-
 .email-tags {
   color: #40514e;
   margin: 5px;
@@ -199,7 +202,6 @@ p {
 }
 
 /* footer */
-
 .bottom-container {
   background-color: #00adb5;
   padding: 50px 0 20px;
@@ -225,53 +227,51 @@ p {
   color: #eaf6f6;
 }
 
-
-
-
 /***************** responsiveness *********************/
-
 /* @media (prefers-color-scheme: dark) {
   body {
     background-color: white;
   }
 } */
-
 @media (max-width: 480px) {
-.intro {
-  text-align: center;
-  width: 100%;
-}
+  .intro {
+    text-align: center;
+    width: 100%;
+  }
 
-.mountain {
-  width: 75%;
-}
+  .mountain {
+    width: 75%;
+  }
 
-.top-cloud {
-  position: absolute;
-  bottom: 15%;
-  width: 10%;
-}
+  .top-cloud {
+    position: absolute;
+    bottom: 15%;
+    width: 10%;
+  }
 
-.bottom-cloud {
-  position: absolute;
-  bottom: 10%;
-  width: 10%;
-}
+  .bottom-cloud {
+    position: absolute;
+    bottom: 10%;
+    width: 10%;
+  }
 
-.profile-picture {
-  width: 60%;
-}
+  .profile-picture {
+    width: 60%;
+  }
 
-.skill-row {
-  width: 90%;
-}
+  .profile, .projects, .hobbies, .contact-me {
+    padding: 10% 0;
+  }
 
-.contact-message {
-  margin: 10% auto;
-}
+  .skill-row {
+    width: 90%;
+  }
 
-#footer {
-  padding: 5%;
-}
+  .contact-message {
+    margin: 10% auto;
+  }
 
+  #footer {
+    padding: 10% 5%;
+  }
 }
