@@ -1,2 +1,3 @@
 # chris-personal-site
-A fun little HTML/CSS project.
+
+An attempt at making a website which showcases my portfolio.
