@@ -227,6 +227,7 @@ p {
 @media (max-width: 1028px) {
 .intro {
   text-align: center;
+  width:  100%;
 }
 
 .skill-row {
