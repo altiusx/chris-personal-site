@@ -16,7 +16,7 @@ h1 {
   font-size: 5.625rem;
   /* tip: 1em == 100% == 16px */
   /* rem ignores upstream size changes */
-  margin: 5% auto 0 auto;
+  margin: 7% auto 0 auto;
 }
 
 h2 {
@@ -56,9 +56,9 @@ p {
   border-radius: 50%;
 }
 
-.title-trailing {
-  font-size: 2.25rem;
-}
+/* .title-trailing {
+  font-size: 2rem;
+} */
 
 .top-container {
   background-color: #222831;
@@ -193,7 +193,7 @@ p {
 /*get in touch*/
 .email-tags {
   color: #40514e;
-  margin: 5px;
+  font-family: "Bitter", serif;
 }
 
 .contact-message {
