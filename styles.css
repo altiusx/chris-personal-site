@@ -16,7 +16,7 @@ h1 {
   font-size: 5.625rem;
   /* tip: 1em == 100% == 16px */
   /* rem ignores upstream size changes */
-  margin: 50px auto 0 auto;
+  margin: 5% auto 0 auto;
 }
 
 h2 {
@@ -76,21 +76,20 @@ p {
 }
 
 @keyframes top-cloud {
-  from {right: 300px;}
-  to {right: 200px;}
+  from {right: 15%;}
+  to {right: 8%;}
 }
 
 .bottom-cloud {
   position: absolute;
   bottom: 300px;
-  left: 250px;
   animation: bottom-cloud 5s alternate infinite linear;
   animation-delay: 0.5s;
 }
 
 @keyframes bottom-cloud {
-  from {left: 250px;}
-  to {left: 150px;}
+  from {left: 20%;}
+  to {left: 10%;}
 }
 
 /* Hello section */
@@ -109,9 +108,8 @@ p {
 }
 
 .profile-picture {
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
+  width: 90%;
+  border-radius: 25%;
 }
 
 .profile-header {
@@ -134,7 +132,8 @@ p {
 
 .skill-row {
   width: 60%;
-  margin: 100px auto 100px auto;
+  margin: 6.25rem auto 6.25rem auto;
+  padding-bottom: 5%;
   text-align: left;
 }
 
@@ -196,7 +195,7 @@ p {
 
 .contact-message {
   width: 90%;
-  margin: 40px auto 60px;
+  margin: 5% auto;
 }
 
 /* footer */
@@ -237,18 +236,42 @@ p {
   }
 } */
 
-@media (max-width: 1028px) {
+@media (max-width: 480px) {
 .intro {
   text-align: center;
   width: 100%;
 }
 
 .mountain {
-  width: 80%;
+  width: 75%;
+}
+
+.top-cloud {
+  position: absolute;
+  bottom: 15%;
+  width: 10%;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 10%;
+  width: 10%;
+}
+
+.profile-picture {
+  width: 60%;
 }
 
 .skill-row {
   width: 90%;
+}
+
+.contact-message {
+  margin: 10% auto;
+}
+
+#footer {
+  padding: 5%;
 }
 
 }
