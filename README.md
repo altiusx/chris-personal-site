@@ -1,3 +1,5 @@
 # chris-personal-site
 
-An attempt at making a website which showcases my portfolio.
+This is a fun web project about my personal projects and stuff.
+
+Still a work in progress!
