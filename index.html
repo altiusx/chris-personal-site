@@ -144,34 +144,6 @@
       </div>
     </div>
 
-    <!-- <div id="project-carousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#project-carousel" data-slide-to="1"></li>
-        <li data-target="#project-carousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active container-fluid">
-          <img class="draw0 img-fluid" src="images/IMG_0009.jpeg" alt="image1">
-          <em>Pikachu</em>
-        </div>
-        <div class="carousel-item container-fluid">
-          <img class="draw0 img-fluid" src="images/IMG_0038.jpeg" alt="image2">
-          <em>Ori & Ku</em>
-        </div>
-        <div class="carousel-item container-fluid">
-          <img class="draw0 img-fluid" src="images/IMG_0505.jpeg" alt="image3">
-          <em>Hollow Knight</em>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-    </div> -->
-
   </div>
 
 
@@ -181,28 +153,67 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="skill-row my-4">
-          <img class="skills-pic-2" src="https://media2.giphy.com/media/DmDruKpuMZOhO0FBeH/200w.webp?cid=ecf05e47bpyxjdoul8k43ugyae6w132co2bjwb4hga3odrum&rid=200w.webp&ct=s" alt="drawing-icon">
-          <h3>Drawing</h3>
-          <p>I enjoy drawing with my iPad during my free time. Most of my drawings involve fictional characters from video games that I enjoy. You may check out the rest of my drawings on my Instagram linked below.</p>
+        <div class="skill-row my-4 mx-auto">
+          <img class="skills-pic-2" src="https://image.flaticon.com/icons/png/512/603/603519.png" alt="drawing-icon">
+          <h3>Creative Work</h3>
+          <p>I enjoy drawing with my iPad during my free time, using Autodesk Sketchbook and Procreate. Most of my drawings involve fictional characters from video games that I enjoy. In addition, I do occasional photo edits using Pixelmator Pro. You
+            may check out the rest of my drawings on my Instagram linked
+            below.</p>
 
-          <div class="row">
+          <div class="row pcOnly">
+
+            <!-- only display this view in PC/tablet only -->
             <div class="column">
               <!-- TODO: Display random images from the art-section folder -->
-              <!-- <img id="image" /> -->
 
-              <a class="img-tags" href="https://www.instagram.com/p/CPPBa8ihwhL/"><img class="draw1 img-fluid" src="images/art-section/IMG_0009.jpeg" alt="image1"></a>
+              <img class="draw1 rounded img-fluid" src="images/art-section/1.jpeg" alt="image1">
             </div>
             <div class="column">
-              <a class="img-tags" href="https://www.instagram.com/p/CPhqYS_hi9h/"><img class="draw1 img-fluid" src="images/art-section/IMG_0038.jpeg" alt="image2"></a>
+              <img class="draw1 rounded img-fluid" src="images/art-section/2.jpeg" alt="image2">
             </div>
             <div class="column">
-              <a class="img-tags" href="https://www.instagram.com/p/CPv2kE6hPma/"><img class="draw1 img-fluid" src="images/art-section/IMG_0505.jpeg" alt="image3"></a>
+              <img class="draw1 rounded img-fluid" src="images/art-section/3.jpeg" alt="image3">
             </div>
           </div>
-          <script src="index.js" type="text/javascript">
+          <script src="index.js" type="text/javascript"></script>
 
-          </script>
+          <!-- only display the carousel on mobile websites -->
+          <div class="mobileOnly">
+            <div id="art-carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#art-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#art-carousel" data-slide-to="1"></li>
+                <li data-target="#art-carousel" data-slide-to="2"></li>
+                <li data-target="#art-carousel" data-slide-to="3"></li>
+                <li data-target="#art-carousel" data-slide-to="4"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                  <img class="draw0 img-fluid" src="images/art-section/1.jpeg" alt="image1">
+                </div>
+                <div class="carousel-item container-fluid">
+                  <img class="draw0 img-fluid" src="images/art-section/2.jpeg" alt="image2">
+                </div>
+                <div class="carousel-item container-fluid">
+                  <img class="draw0 img-fluid" src="images/art-section/3.jpeg" alt="image3">
+                </div>
+                <div class="carousel-item container-fluid">
+                  <img class="draw0 img-fluid" src="images/art-section/4.jpeg" alt="image4">
+                </div>
+                <div class="carousel-item container-fluid">
+                  <img class="draw0 img-fluid" src="images/art-section/5.jpeg" alt="image5">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#art-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#art-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+
+
         </div>
         <div class="col-lg-6 col-md-6">
           <div class="skill-row my-4">

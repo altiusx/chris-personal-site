@@ -145,10 +145,18 @@ p {
   padding-top: 5%;
 }
 
+.pcOnly {
+  display: inline;
+}
+
+.mobileOnly {
+  display: none;
+}
+
 .skills-pic-2 {
   width: 20%;
   float: right;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 /* the three drawings */
@@ -189,7 +197,7 @@ p {
 
 .contact-message {
   width: 90%;
-  margin: 3% auto;
+  margin: 5% auto;
 }
 
 /* footer */
@@ -265,6 +273,14 @@ p {
 
   .contact-message {
     margin: 10% auto;
+  }
+
+  .pcOnly {
+    display: none;
+  }
+
+  .mobileOnly {
+    display: inline;
   }
 
   #footer {
