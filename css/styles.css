@@ -271,6 +271,14 @@ p {
     width: 90%;
   }
 
+  .skills-pic-2 {
+    float: none;
+    width: 8rem;
+    border-radius: 25%;
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
+
   .contact-message {
     margin: 10% auto;
   }
