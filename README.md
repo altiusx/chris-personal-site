@@ -2,4 +2,4 @@
 
 This is a fun web project about my personal projects and stuff.
 
-Still a work in progress!
+This project has been replaced with the new portfolio website.
